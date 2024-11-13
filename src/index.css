@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes rainbow {
+  0% { color: #ff0000; }
+  17% { color: #ffa500; }
+  33% { color: #ffff00; }
+  50% { color: #00ff00; }
+  67% { color: #0000ff; }
+  83% { color: #4b0082; }
+  100% { color: #8f00ff; }
+}
+
+.rainbow-text {
+  animation: rainbow 2s linear infinite;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 1s ease-in forwards;
+}
